@@ -1,0 +1,61 @@
+/** {
+	border: 1px solid black;
+}*/
+
+body {
+	background: url("../images/lightspeed.jpg");
+	color: white; 
+	font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+	width: 60%;
+	margin: auto;
+	margin-top: 30px;
+	background-color: #787878;
+	border: 5px ridge #535353;
+}
+
+
+.logo {
+	display: block;
+	width: 40%;
+	margin: 2% auto 0 auto;
+}
+.subtitle {
+	font-size: 2em;
+	margin: 0 auto 2% auto;
+}
+
+ p {
+	text-align: center;
+	font-size: 20px;
+}
+
+
+.content {
+	display: flex;
+}
+
+.hangman-img {
+	display: block;
+	width: 100%;
+}
+
+.hang-display {
+	width: 50%
+	border: 1px dotted black;
+}
+
+.hang-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 50%;
+}
+
+.content-seg {
+	border-top: 1px solid #535353;
+	border-bottom: 1px solid #535353;
+}
+
