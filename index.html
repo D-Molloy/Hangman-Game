@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Stormtrooper Hangman</title>
+	<link rel="shortcut icon" type="img/png" href="assets/images/empire.png">
 	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
@@ -14,22 +15,22 @@
 		</div>
 		<div class="content">
 			<div class="hang-display">
-				<img class="hangman-img" src="assets/images/stormtrooper.png">
+				<img class="hangman-img" src="assets/images/hangman0.png">
 			</div>
 			<div class="hang-content">
 				<div class="content-seg">
 					<p>Press any letter to start!</p>
 				</div>
 				<div class="content-seg">
+					<p>Wins:<span class="player-wins"></span></p>
+				</div>
+				<div class="content-seg">
 					<p>Current Word:</p>
-					<p class="current-word">_ _ _ _ _ _</p>
+					<p class="current-word"></p>
 				</div>
 				<div class="content-seg">
-					<p>Corrent guesses:<span class="correct-guesses"></span></p>
-				</div>
-				<div class="content-seg">
-					<p>Letters already guessed:</p>
-					<p class="guessed-letters">_ _ _ _ _ _</p>
+					<p>Letters guessed:</p>
+					<p class="letters-guessed">_ _ _ _ _ _</p>
 				</div>
 				<div class="content-seg">
 					<p>Guesses Remaining:<span class="remaining-guesses"></span></p>
@@ -40,6 +41,14 @@
 		</div>
 
 	</div>
+<!-- <audio controls autoplay> 
+<audio id="audio-source" src="">
+			Your browser does not support the <code>audio</code> element.
+	</audio>
+-->
+	<audio id="audio-source" src=" ">
+			Your browser does not support the <code>audio</code> element.
+	</audio>
 
 </body>
 <script type="text/javascript" src="assets/javascript/game.js"></script>
