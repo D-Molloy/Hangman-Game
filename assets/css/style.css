@@ -8,10 +8,10 @@ body {
 	font-family: 'Orbitron', sans-serif;
 }
 
-.container {
+.container, .audio-bar {
 	width: 60%;
 	margin: auto;
-	margin-bottom: 20px;
+	/*margin-bottom: 20px;*/
 	background-color: #787878;
 	border: 5px ridge #535353;
 }
@@ -28,8 +28,7 @@ body {
 }
 
 audio {
-	width: 60%;
-	margin: -20px 0 0 20%;
+	width: 100%;
 }
 
 p {
@@ -46,7 +45,6 @@ p {
 
 .hangman-img {
 	width: 100%
-	
 }
 
 .hang-display {

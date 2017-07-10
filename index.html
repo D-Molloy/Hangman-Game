@@ -18,22 +18,22 @@
 				<img class="hangman-img" src="assets/images/hangman0.png">
 			</div>
 			<div class="hang-content">
-				<div class="content-seg">
-					<p>Press any letter to start!</p>
+				<div class="content-seg instructions">
+					<p class="billboard">Press any letter to start!</p>
 				</div>
 				<div class="content-seg">
-					<p>Wins:<span class="player-wins"></span></p>
+					<p>Wins: <span class="player-wins"></span></p>
 				</div>
 				<div class="content-seg">
 					<p>Current Word:</p>
 					<p class="current-word"></p>
 				</div>
 				<div class="content-seg">
-					<p>Letters guessed:</p>
-					<p class="letters-guessed">_ _ _ _ _ _</p>
+					<p>Wrong guesses:</p>
+					<p class="wrong-guesses"></p>
 				</div>
 				<div class="content-seg">
-					<p>Guesses Remaining:<span class="remaining-guesses"></span></p>
+					<p>Guesses Remaining: <span class="remaining-guesses">6</span></p>
 				</div>
 
 			</div>
@@ -41,15 +41,11 @@
 		</div>
 
 	</div>
-<!-- <audio controls autoplay> 
-<audio id="audio-source" src="">
-			Your browser does not support the <code>audio</code> element.
-	</audio>
--->
-	<audio id="audio-source" src=" ">
-			Your browser does not support the <code>audio</code> element.
-	</audio>
-
+	<div class="audio-bar">
+		<audio controls autoplay id="audio-source" src=" ">
+				Your browser does not support the <code>audio</code> element.
+		</audio>
+	</div>
 </body>
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 </html>
