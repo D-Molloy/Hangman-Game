@@ -11,7 +11,6 @@ body {
 .container, .audio-bar {
 	width: 60%;
 	margin: auto;
-	/*margin-bottom: 20px;*/
 	background-color: #787878;
 	border: 5px ridge #535353;
 }
@@ -33,7 +32,7 @@ audio {
 
 p {
 	text-align: center;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 
