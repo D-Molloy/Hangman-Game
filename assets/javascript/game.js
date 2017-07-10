@@ -79,7 +79,8 @@ gameReset = function(){
 document.onkeyup = function(event) {
 	var userGuess = event.key;
 	var letterFound = false;
-
+	var billboard = document.querySelector(".billboard");
+	billboard.innerHTML= "Press a letter!";
 	// console.log(userGuess);
 	// console.log(currentWordArray);
 
