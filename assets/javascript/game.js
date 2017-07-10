@@ -5,9 +5,9 @@ var starWords = ["ackbar", "alderaan", "anakin", "bespin", "biggs", "C3PO", "cal
 var random = Math.floor((Math.random()*(starWords.length - 1)));
 
 //select the currentWord from the Array
-var currentWord = "worshipfullness";//starWords[random];
+var currentWord = starWords[random];
 
-console.log(currentWord)
+// console.log(currentWord)
 //find the non-whitespace characters in currentWord and place them in an array
 var currentWordArray = currentWord.match(/\S/g);
 
@@ -36,9 +36,6 @@ strongForce = function() {
 	}
 }
 
-
-
-
 var badGuessArray = [];
 var guessCount = 10;
 var badGuessCount = 0;
@@ -52,14 +49,14 @@ document.onkeyup = function(event) {
 	// var letterFound = false;
 	// var gameOver = false;
 
-	console.log(userGuess);
-	console.log(currentWordArray);
+	// console.log(userGuess);
+	// console.log(currentWordArray);
 
 	//iterate through currentWordArray to check if the userGuess is in it.  If so place the letter into blanksArray at the correct index
 	for (var i = 0; i < currentWordArray.length; i++) {
 		if (userGuess == currentWordArray[i]) {
 			blanksArray[i] = userGuess;
-			console.log(blanksArray);
+			// console.log(blanksArray);
 			document.querySelector(".current-word").innerHTML = blanksArray.join(' ');
 			letterFound = true;
 		} 
