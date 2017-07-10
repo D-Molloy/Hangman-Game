@@ -3,7 +3,6 @@ var starWords = ["ackbar", "alderaan", "anakin", "bespin", "biggs", "c3po", "cal
 //generate a random number which will be the index for the arrayElement we will use for currentWord
 var random = Math.floor((Math.random()*(starWords.length - 1)));
 
-
 //select the currentWord from the Array
 var currentWord = starWords[random];
 
@@ -11,7 +10,6 @@ var currentWord = starWords[random];
 
 //find the non-whitespace characters in currentWord and place them in an array
 var currentWordArray = currentWord.match(/\S/g);
-
 
 //create and array the same size as currentWordArray in which to place the blank spaces
 var blanksArray = new Array(currentWordArray.length);
@@ -37,7 +35,6 @@ strongForce = function() {
 	}
 }
 
-
 //declare variables used in the onkeyup event
 var badGuessArray = [];
 var guessCount = 10;
@@ -55,7 +52,6 @@ globalOnKeyVarReset = function(){
 	return guessCount;
 	return badGuessCount;
 }
-
 
 // a function that resets the current word
 currentWordReset = function() {
@@ -120,8 +116,6 @@ document.onkeyup = function(event) {
 		}
 
 	}
-
-	
 
 	//turn the blanksArray and CurrentWordArray into strings so I can can compare them in the if statement
 	var blanksArrayString = blanksArray.toString();
